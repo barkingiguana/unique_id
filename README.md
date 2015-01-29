@@ -1,6 +1,6 @@
 # BarkingIguana::UniqueId
 
-TODO: Write a gem description
+Easily generate (almost definitely) unique IDs.
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'barking_iguana/unique_id'
+BarkingIguana::UniqueId.generate # => "0.0.1-shiv-Kf9-1YGmYi-3C1TsC"
+```
 
 ## Contributing
 
