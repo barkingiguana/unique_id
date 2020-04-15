@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'bundler'
-Bundler.require
 require 'barking_iguana/unique_id'
 
 number = ARGV[0].to_s.strip.empty? ? 1 : ARGV[0].to_i
