@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ```ruby
 require 'barking_iguana/unique_id'
-BarkingIguana::UniqueId.generate # => "0.0.1-shiv-Kf9-1YGmYi-3C1TsC"
+BarkingIguana::UniqueId.generate # => "0.0.2-vi-8N2-1jOXzk-NRl-4LX8YS"
 ```
 
 ## Contributing

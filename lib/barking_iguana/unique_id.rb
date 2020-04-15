@@ -1,4 +1,5 @@
 require 'base_n'
+require 'socket'
 
 module BarkingIguana
   module UniqueId
@@ -9,9 +10,9 @@ module BarkingIguana
     end
 
     def self.generate
-      t = squash Time.now.to_i
-      r = squash rand(9_999_999_999)
-      [ prefix, t, r ].join '-'
+      t, n = Time.now.to_f.to_s.split('.', 2).map { |s| squash s }
+      r = squash(rand(9_999_999_999))
+      [ prefix, t, n, r ].join '-'
     end
 
     def self.hostname
